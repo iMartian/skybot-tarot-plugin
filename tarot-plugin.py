@@ -219,8 +219,8 @@ def tarot(inp):
     img = img.resize((basewidth, hsize), Image.ANTIALIAS)
     img.save("resized_image.jpg")
     image_path= "./resized_image.jpg"
-    client_id = 'cb63be4ff89eb57'
-    client_secret = '63112dbe4862926af3ac2da563cb2162e1e5ea15'
+    client_id = '<<INSERT CLIENT ID>>' # Imgur.com api client id
+    client_secret = '<<INSERT CLIENT SECRET>>' # imgur.com api client secret
     client = ImgurClient(client_id, client_secret)
     ihavenoidea = client.upload_from_path(image_path, config=None, anon=True)
     link=ihavenoidea['link']

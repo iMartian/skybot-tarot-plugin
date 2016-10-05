@@ -1,0 +1,1 @@
+# skybot-tarot-plugin
